@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useState } from "react";
 import { FC_CreateAccount } from "../actions";
 const defaultAlert = {
