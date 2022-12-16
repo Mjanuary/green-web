@@ -3,10 +3,10 @@ import React from "react";
 export default function SideNavigation({ back }) {
   return (
     <nav
-      className="navbar show navbar-vertical h-lg-screen navbar-expand-lg px-0 py-3 navbar-light bg-white border-bottom border-bottom-lg-0 border-end-lg"
+      className="navbar show navbar-vertical hidden h-lg-screen navbar-expand-lg px-0 py-3 navbar-light bg-white border-bottom border-bottom-lg-0 border-end-lg"
       id="navbarVertical"
     >
-      <div className="container-fluid">
+      <div className="container-fluid hidden">
         {/* {/*  Toggler */}
         <button
           className="navbar-toggler ms-n2"
@@ -24,7 +24,7 @@ export default function SideNavigation({ back }) {
           <img src="icon.png" alt="..." />
         </button>
         {/*  User menu (mobile) */}
-        <div className="navbar-user">
+        <div className="navbar-user hidden">
           {/*  Dropdown */}
           <div className="dropdown">
             {/*  Toggle */}
@@ -59,11 +59,11 @@ export default function SideNavigation({ back }) {
         </div>
         {/*  Collapse */}
         <div
-          className="navbar-collapse block "
+          className="navbar-collapse block hidden"
           //   id="sidebarCollapse"
         >
           {/*  Navigation */}
-          <ul className="navbar-nav w-full">
+          <ul className="navbar-nav hidden">
             <li className="nav-item w-full">
               <button className="nav-link lg:w-full">
                 <i className="bi bi-house"></i> Acceuille
